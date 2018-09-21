@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/main.css">
+    <title>Команда | bargester studio</title>
+  </head>
+  <body>
+    <header class="header-s">
+      <div class="container header-s__wrap">
+        <div class="logo"><a href="https://bargester.github.io/test-ContentMania/build/index.html"><img class="logo__img" src="static/img/svg/logo.svg" alt="bargester studio" title="Запись видео любой категории и содержания">bargester studio</a></div>
+        <nav class="nav"><a class="header-nav__menu" href="javascript:void(0)">Меню</a>
+          <ul class="header-nav">
+            <li class="header-nav__item"><a class="header-nav__link" href="https://bargester.github.io/test-ContentMania/build/index.html">Главная</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="https://bargester.github.io/test-ContentMania/build/price.html">Цены</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="https://bargester.github.io/test-ContentMania/build/team.html">Команда</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Отзывы</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="price-intro-s">
+      <div class="container price-intro-s__wrap">
+        <h3 class="common-title">Команда видеозаписи</h3>
+        <div class="price-intro-s__content">
+          <div class="price-intro-s__text">
+            <p class="common-text">Bargester studio – творческая команда людей, увлеченных любимым делом.<br>Мы все время движемся вперед, самосовершенствуемся и развиваемся.<br>Иначе, жизнь скучна и однообразна.<br>Присоединяйтесь к нам! Приходите! Пробуйте! Ничего не бойтесь!</p>
+            <p class="common-text">Опыт здесь не важен, стоит просто быть собой! Всё возможно!<br>Не хотите – заставим ☺<br>То, что мертво - умереть не может!<br>Ибо ночь темна и полна ужасов!</p>
+          </div>
+          <div class="price-intro-s__video">
+            <h3 class="price-intro-s__title">Здесь должно быть видео с командой, но здесь еще одна песня Starset:</h3>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/LAMiX5EEbFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+          </div>
+        </div><a class="btn btn--reg-form" href="javascript:void(0)">Записаться</a>
+      </div>
+    </section>
+    <section class="team-main-s">
+      <div class="container team-main-s__wrap">
+        <ul class="team-main-s__list">
+          <li class="team-main-s__list-item"><img class="team-main-s__list-img" src="static/img/content/team-1.jpg">
+            <h5 class="team-main-s__list-title">Тереняк Василий</h5>
+            <p class="team-main-s__list-subtitle">Оператор</p>
+            <p class="team-main-s__list-text">Человек, который талантливо концентрирует вокруг себя позитивную энергетическую силу. Очень магическая личность. Ну и снимает видео еще</p>
+          </li>
+          <li class="team-main-s__list-item"><img class="team-main-s__list-img" src="static/img/content/team-2.jpg">
+            <h5 class="team-main-s__list-title">Тереняк Василий</h5>
+            <p class="team-main-s__list-subtitle">Монтажер</p>
+            <p class="team-main-s__list-text">Человек, который талантливо монтирует вокруг себя. Очень монтирующая личность</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="footer-s">2018 © Bargester.<a class="footer-s__link" href="javascript:void(0)"> Политика конфиденциальности.</a></footer>
+    <div class="btn-call"><img src="static/img/svg/letter.svg" height="40px"></div>
+    <div class="overlay"></div>
+    <form class="form" id="reg-form">
+      <h4 class="form__header">Напишите нам</h4>
+      <div class="form__body">
+        <input class="form__input" type="text" name="name" placeholder="Ваше Имя" required>
+        <input class="form__input" type="tel" name="tel" placeholder="Ваш номер телефона" required>
+        <select class="form__input" name="todo" required="">
+          <option value="" selected="">Что вы хотите сделать</option>
+          <option value="Рекламный ролик">Рекламный ролик</option>
+          <option value="Презентация">Презентация</option>
+          <option value="Документальный фильм">Документальный фильм</option>
+          <option value="Видеотрансляцию">Видеотрансляцию</option>
+          <option value="Отчетный ролик">Отчетный ролик</option>
+          <option value="Имиджевый ролик">Имиджевый ролик</option>
+          <option value="Учебный фильм">Учебный фильм</option>
+          <option value="Музыкальный клип">Музыкальный клип</option>
+        </select>
+        <button class="btn" type="submit">Отправить</button>
+      </div>
+      <p class="form__text">
+        <input id="user-agree" type="checkbox" required="">
+        <label for="user-agree">
+          Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности и пользовательским соглашением</label>
+      </p>
+      <button class="form__close" type="button"><span aria-hidden="true">×</span></button>
+    </form>
+    <form class="form" id="privacy-form">
+      <h4 class="form__header">Политика Конфиденциальности</h4>
+      <p class="form__text">Все конфиденцильно, честное слово</p>
+      <button class="form__close" type="button"><span aria-hidden="true">×</span></button>
+    </form>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
