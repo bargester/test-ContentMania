@@ -60,6 +60,9 @@
 
 @media screen and (max-width: 600px) {
   .intro-s {
+    &__description{
+      top: 40%;
+    }
     &__description-list {
       display: flex;
       flex-direction: column;
