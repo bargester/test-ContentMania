@@ -81,6 +81,14 @@
   position: relative;
   z-index: 2;
 }
+.common-subtitle{
+  padding: 5px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
 .common-text{
   padding: 10px 0;
   font-size: 20px;
@@ -92,6 +100,12 @@
 }
 .text-color{
   color: $main-color;
+}
+.link-color{
+  color: $main-color;
+  &:hover{
+    color: lighten($main-color, 10%);
+  }
 }
 .overlay{
   display: none;

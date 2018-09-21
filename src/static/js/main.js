@@ -24,4 +24,11 @@ $(document).ready(function() {
         $('#privacy-form').fadeOut();
         $('body').removeClass('modal-open');
     });
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000
+    });
 });
