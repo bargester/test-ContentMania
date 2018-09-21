@@ -1,10 +1,10 @@
-.intro-s{
+.intro-s {
   position: relative;
   height: 100vh;
   width: 100%;
   background: url("../img/general/bg.jpg") top center no-repeat;
   background-size: cover;
-  &:after{
+  &:after {
     content: '';
     position: absolute;
     top: 0;
@@ -14,7 +14,7 @@
     background-color: rgba(#000, .3);
     z-index: 0;
   }
-  &__descriptiom{
+  &__descriptiom {
     position: absolute;
     top: 30%;
     left: 50%;
@@ -24,26 +24,26 @@
     max-width: 540px;
     width: 100%;
   }
-  &__title{
+  &__title {
     color: $main-color;
     font-family: GreatVibes, serif;
     font-size: 50px;
   }
-  &__subtitle{
+  &__subtitle {
     font-size: 30px;
     letter-spacing: 5px;
     font-weight: bold;
   }
-  &__description-list{
+  &__description-list {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  &__description-item{
+  &__description-item {
     position: relative;
     font-weight: bold;
-    &:after{
+    &:after {
       content: '';
       position: absolute;
       top: 0;
@@ -52,8 +52,30 @@
       height: 100%;
       background-color: $main-color;
     }
-    &:last-child:after{
+    &:last-child:after {
       content: none;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro-s {
+    &__description-list {
+      display: flex;
+      flex-direction: column;
+    }
+    &__description-item {
+      margin-bottom: 10px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 7.5%;
+        height: 1px;
+        background-color: $main-color;
+      }
     }
   }
 }

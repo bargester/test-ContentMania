@@ -1,6 +1,5 @@
 .best-s{
-  padding: 20px 0;
-  height: 500px;
+  padding: 20px 0 75px;
   background: url("../img/general/bg-2.jpg") center -200px no-repeat;
   background-size: cover;
   position: relative;
@@ -40,5 +39,23 @@
     margin-top: 10px;
     font-size: 20px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 920px){
+  .best-s{
+    background: url("../img/general/bg-2.jpg") center no-repeat #000;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .best-s{
+    &__reasons-list{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__reasons-item{
+      margin: 20px;
+    }
   }
 }

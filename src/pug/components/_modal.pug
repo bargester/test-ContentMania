@@ -1,0 +1,28 @@
+.overlay
+form#reg-form.form
+    h4.form__header Напишите нам
+    .form__body
+        input.form__input(type="text" name="name" placeholder="Ваше Имя" required)
+        input.form__input(type="tel" name="tel" placeholder="Ваш номер телефона" required)
+        select.form__input(name='todo', required='')
+            option(value='', selected='') Что вы хотите сделать
+            option(value='Рекламный ролик') Рекламный ролик
+            option(value='Презентация') Презентация
+            option(value='Документальный фильм') Документальный фильм
+            option(value='Видеотрансляцию') Видеотрансляцию
+            option(value='Отчетный ролик') Отчетный ролик
+            option(value='Имиджевый ролик') Имиджевый ролик
+            option(value='Учебный фильм') Учебный фильм
+            option(value='Музыкальный клип') Музыкальный клип
+        button(type="submit").btn Отправить
+    p.form__text
+        input#user-agree(type='checkbox', required='')
+        label(for='user-agree') Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь c
+            |  политикой конфиденциальности и пользовательским соглашением
+    button.form__close(type='button')
+        span(aria-hidden='true') ×
+form#privacy-form.form
+    h4.form__header Политика Конфиденциальности
+    p.form__text Все конфиденцильно, чесное слово
+    button.form__close(type='button')
+        span(aria-hidden='true') ×

@@ -10,13 +10,15 @@
     <header class="header-s">
       <div class="container header-s__wrap">
         <div class="logo"><a href="#"><img class="logo__img" src="static/img/svg/logo.svg" alt="bargester studio" title="Запись видео любой категории и содержания">bargester studio</a></div>
-        <ul class="header-nav">
-          <li><a class="header-nav__link" href="#">Главная</a></li>
-          <li><a class="header-nav__link" href="#">Цены</a></li>
-          <li><a class="header-nav__link" href="#">Команда</a></li>
-          <li><a class="header-nav__link" href="#">Отзывы</a></li>
-          <li><a class="header-nav__link" href="#">Контакты</a></li>
-        </ul>
+        <nav class="nav"><a class="header-nav__menu" href="javascript:void(0)">Меню</a>
+          <ul class="header-nav">
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Главная</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Цены</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Команда</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Отзывы</a></li>
+            <li class="header-nav__item"><a class="header-nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <section class="intro-s">
@@ -30,8 +32,9 @@
             <li class="intro-s__description-item">Реклама</li>
             <li class="intro-s__description-item">Свадьбы</li>
             <li class="intro-s__description-item">Корпоративы</li>
-          </ul><a class="btn" href="#">Заказать</a>
-        </div><a class="down" href="javascript:void(0)" id="down"></a>
+          </ul><a class="btn btn--reg-form" href="javascript:void(0)">Заказать</a>
+        </div>
+        <div class="down-wrap"><a class="down" href="javascript:void(0)"></a></div>
       </div>
     </section>
     <section class="about-s">
@@ -66,7 +69,39 @@
         </ul>
       </div>
     </section>
-    <footer class="footer-s">2018 © Bargester.<a class="footer-s__link" href="#"> Политика конфиденциальности.</a></footer>
+    <footer class="footer-s">2018 © Bargester.<a class="footer-s__link" href="javascript:void(0)"> Политика конфиденциальности.</a></footer>
+    <div class="btn-call"><img src="static/img/svg/letter.svg" height="40px"></div>
+    <div class="overlay"></div>
+    <form class="form" id="reg-form">
+      <h4 class="form__header">Напишите нам</h4>
+      <div class="form__body">
+        <input class="form__input" type="text" name="name" placeholder="Ваше Имя" required>
+        <input class="form__input" type="tel" name="tel" placeholder="Ваш номер телефона" required>
+        <select class="form__input" name="todo" required="">
+          <option value="" selected="">Что вы хотите сделать</option>
+          <option value="Рекламный ролик">Рекламный ролик</option>
+          <option value="Презентация">Презентация</option>
+          <option value="Документальный фильм">Документальный фильм</option>
+          <option value="Видеотрансляцию">Видеотрансляцию</option>
+          <option value="Отчетный ролик">Отчетный ролик</option>
+          <option value="Имиджевый ролик">Имиджевый ролик</option>
+          <option value="Учебный фильм">Учебный фильм</option>
+          <option value="Музыкальный клип">Музыкальный клип</option>
+        </select>
+        <button class="btn" type="submit">Отправить</button>
+      </div>
+      <p class="form__text">
+        <input id="user-agree" type="checkbox" required="">
+        <label for="user-agree">
+          Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь c политикой конфиденциальности и пользовательским соглашением</label>
+      </p>
+      <button class="form__close" type="button"><span aria-hidden="true">×</span></button>
+    </form>
+    <form class="form" id="privacy-form">
+      <h4 class="form__header">Политика Конфиденциальности</h4>
+      <p class="form__text">Все конфиденцильно, чесное слово</p>
+      <button class="form__close" type="button"><span aria-hidden="true">×</span></button>
+    </form>
     <script src="static/js/libs.min.js"></script>
     <script src="static/js/main.js"></script>
   </body>

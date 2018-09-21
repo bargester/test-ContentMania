@@ -1,7 +1,7 @@
 .footer-s{
   background-color: #000;
-  height: 40px;
-  line-height: 40px;
+  min-height: 40px;
+  padding: 10px 60px;
   border-top: 1px solid $main-color;
   text-align: center;
   &__link{

@@ -4,9 +4,11 @@ header.header-s
             a(href="#")
                 img.logo__img(src="static/img/svg/logo.svg" alt="bargester studio" title="Запись видео любой категории и содержания" )
                 | bargester studio
-        ul.header-nav
-            li: a(href="#").header-nav__link Главная
-            li: a(href="#").header-nav__link Цены
-            li: a(href="#").header-nav__link Команда
-            li: a(href="#").header-nav__link Отзывы
-            li: a(href="#").header-nav__link Контакты
+        nav.nav
+            a(href="javascript:void(0)").header-nav__menu Меню
+            ul.header-nav
+                li.header-nav__item: a(href="#").header-nav__link Главная
+                li.header-nav__item: a(href="#").header-nav__link Цены
+                li.header-nav__item: a(href="#").header-nav__link Команда
+                li.header-nav__item: a(href="#").header-nav__link Отзывы
+                li.header-nav__item: a(href="#").header-nav__link Контакты
