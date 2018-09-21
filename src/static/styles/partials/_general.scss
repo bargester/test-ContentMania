@@ -11,7 +11,7 @@
 }
 .btn{
   display: inline-block;
-  margin: 20px auto ;
+  margin: 15px auto ;
   height: 40px;
   line-height: 40px;
   width: 200px;
@@ -38,7 +38,7 @@
 }
 .down{
   position: relative;
-  display: inline-block;
+  display: block;
   height: 10px;
   width: 10px;
   border-radius: 50%;
@@ -89,6 +89,9 @@
   text-align: justify;
   position: relative;
   z-index: 2;
+}
+.text-color{
+  color: $main-color;
 }
 .overlay{
   display: none;
